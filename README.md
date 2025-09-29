@@ -22,7 +22,43 @@ This Python application detects faces in real-time from a webcam or video file a
 The code is organized with modular functions for clarity, including Gaussian blur generation, face detection, video handling, and user-interactive controls.
 
 ---
+## 🎯 Potential Applications
 
+- Privacy in Video Calls
+
+- Blur faces for employees or students who wish to remain anonymous.
+
+- Live Streaming
+
+- Protect identities of bystanders in public streams.
+
+- Journalism & Media
+
+- Automatically anonymize individuals during sensitive reporting.
+
+- Surveillance Enforcement (where facial data is restricted)
+
+- Instead of storing biometric data, blur faces while still recording activities.
+
+- Parking & Access Control
+
+- Extended version could read QR codes, barcodes, or license plates for automated enforcement without storing personal facial data.
+
+- Healthcare & Education
+
+- Record interactions while protecting identities for compliance.
+---
+## ✨ Features
+
+- Real-time **face detection** using **facenet-pytorch (MTCNN)**.
+- **GPU-accelerated blur** with PyTorch convolution (CUDA).
+- **CPU fallback blur** using OpenCV.
+- Adjustable **blur intensity** during runtime.
+- Save **snapshots (`.jpg`)** and **recordings (`.mp4`)**.
+- Tkinter **GUI controls** (sliders, buttons, zoom/pan).
+- **Virtual webcam** output (Linux via `v4l2loopback`, Windows via OBS VirtualCam).
+- On-screen overlay showing controls, blur level, and recording status.
+---
 ## Code Overview
 
 ### 1. **Imports and Dependencies**
