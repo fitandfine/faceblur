@@ -3,3 +3,4 @@ numpy>=1.21
 torch>=1.12      # CPU or GPU wheel; install appropriate wheel for your system
 facenet-pytorch==2.6.0
 pyvirtualcam>=0.10   # optional, for virtual webcam support
+pillow
